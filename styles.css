@@ -1,0 +1,73 @@
+
+body {
+  /* Before the wildfire: */
+  font-family: NoeText;
+  font-size: 20px;
+  color: #222222;
+  line-height: 40px;
+}
+
+.hed {
+  /* Parametric: */
+  font-family: BluuNext-Bold;
+  font-size: 124px;
+  width: 900px;
+}
+
+.dek {
+  /* Call for Proposals: */
+  font-family: Graphik-Bold;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: Graphik-Bold;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+input[type="range"]{
+  -webkit-appearance:none;
+  width:160px;
+  height:20px;
+  margin:10px 50px;
+  background: linear-gradient(to right, #000 0%, #000 100%);
+  background-size:150px 10px;
+  background-position:center;
+  background-repeat:no-repeat;
+  overflow:hidden;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  background:#000;
+  position:relative;
+  z-index:3;
+  box-shadow:0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb:after{
+  content:" ";
+  width:160px;
+  height:10px;
+  position:absolute;
+  z-index:1;
+  right:20px;
+  top:5px;
+  background: #000;
+  background: linear-gradient(to right, #000 1%, #000 70%);
+}
+
+.idyll-text-container {
+  max-width: 900px;
+}
+
+
+@media all and (max-width: 1000px) {
+
+}
+
