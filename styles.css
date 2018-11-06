@@ -33,7 +33,7 @@ input[type="range"]{
   height:20px;
   margin:10px 50px;
   background: linear-gradient(to right, #000 0%, #000 100%);
-  background-size:150px 10px;
+  background-size:150px 5px;
   background-position:center;
   background-repeat:no-repeat;
   overflow:hidden;
@@ -42,7 +42,7 @@ input[type="range"]{
 
 input[type="range"]::-webkit-slider-thumb{
   -webkit-appearance:none;
-  width:20px;
+  width:7px;
   height:20px;
   background:#000;
   position:relative;
@@ -52,8 +52,8 @@ input[type="range"]::-webkit-slider-thumb{
 
 input[type="range"]::-webkit-slider-thumb:after{
   content:" ";
-  width:160px;
-  height:10px;
+  width:100px;
+  height:5px;
   position:absolute;
   z-index:1;
   right:20px;
@@ -66,6 +66,23 @@ input[type="range"]::-webkit-slider-thumb:after{
   max-width: 900px;
 }
 
+.sliderContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  bottom: 20px;
+  border: solid 1px black;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+.sliderContainer p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
 
 @media all and (max-width: 1000px) {
 
