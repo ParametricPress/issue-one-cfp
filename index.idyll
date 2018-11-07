@@ -1,9 +1,7 @@
-[meta title:"Issue One Cfp" description:"Short description of your project" /]
+[meta title:"The Parametric Press | Issue 01 Call For Proposals" description:"The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society." /]
 
 
-[Header
-  title:"Parametric Press"
-  subtitle:"Call for Proposals Fall/Winter 2018" /]
+[Header /]
 
 
 [var name:"brightness" value:1 /]
@@ -13,21 +11,21 @@
 [div className:"sliderContainer"]
     [StyleUpdater brightness:brightness fontSize:fontSize /]
 
-    Font[br/]
+    Size[br/]
     [Range value:fontSize min:0 max:1 step:0.01 /]
 
     Color[br/]
     [Range value:brightness min:0 max:1 step:0.01 /]
 
     Detail[br/]
-    [Range value:levelOfDetail min:0 max:1 step:0.5 /]
+    [Range value:levelOfDetail min:0 max:1 step:0.25 /]
 [/div]
 
-[Conditional if:`levelOfDetail > 0.5`]
+[Conditional if:`levelOfDetail === 1.0`]
 
-Before the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook, aspirational visions for the future of computing centered around empowering individuals and enhancing cognition. Alan Kay imagined the DynaBook in the hands of children across the world, while Neal Stephenson wrote of interactive paper that could display videos and interfaces, and books that could teach their readers.
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around empowering individuals and enhancing cognition, but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook,
 
-While it has never been easier for independent writers to share their ideas online, the current generation of publishing technology mimics tools that were designed during the era of the printing press. The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting data-driven journalism, and pushing the boundaries of web design.
+Alan Kay imagined the DynaBook in the hands of children across the world, while Neal Stephenson wrote of interactive paper that could display videos and interfaces, and books that could teach their readers. The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
 
 ## About The Parametric Press
 The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.
@@ -35,128 +33,128 @@ The Parametric Press is an experimental new project, a born-digital magazine ded
 We are accepting submissions for the issue now; read our call for proposals below.
 
 ## Call for Proposals
-We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific concepts have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
+We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
 
-We can provide some amount of technical assistance to those who aren't comfortable programming. We will also provide an optional starter template and interactive component architecture using Idyll to make it easy to get started. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
+We can provide some amount of technical assistance to those who aren't comfortable programming. We will also provide a starter template and interactive component architecture using Idyll to make it easy to get started. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
 
-* 1-2 paragraphs outlining your article
+* A one-two paragraph outline describing your article
 * Suggested headline
-* Sketches, mockups, or code prototypes of any multimedia or interactive components
-* A brief description of your background: Why are you qualified to write this? How technically proficient are you? What will you need help with?
-* Anything else we should know
+* Any sketches, mockups, or code prototypes that you've made (optional)
+* A brief description of your background: Why are you qualified to write this? What will you need help with?
 
-### Example Topics
+[/Conditional]
 
-- CRISPR
-- The new science of Causality
-- The Universal Approximation Theorem
-- How is fake meat made
-- Reconstructing images in human brains
-- How to hack an election
-- Quantum Computers
-- Carbon capture technologies
-- Memory manipulation
-- Interfacing with dreams
-- Terraforming Planets
-- Nuclear Technology
-- The decentralized web
-- New developments in architecture
-- Bio Hacking
-- The Opioid Epidemic
+[Conditional if:`levelOfDetail === 0.75`]
 
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around empowering individuals and enhancing cognition, Alan Kay imagined the DynaBook in the hands of children across the world, while Neal Stephenson wrote of books that could teach their readers.
 
-### Existing Examples / Inspiration
-- [http://worrydream.com/MagicInk/](http://worrydream.com/MagicInk/)
-- [https://explorabl.es/](https://explorabl.es/)
-- [https://www.nytimes.com/section/upshot](https://www.nytimes.com/section/upshot)
-- [https://projects.fivethirtyeight.com/](https://projects.fivethirtyeight.com/)
-- [https://pudding.cool/](https://pudding.cool/)
+The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+
+## About The Parametric Press
+The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.
+
+We are accepting submissions for the issue now; read our call for proposals below.
+
+## Call for Proposals
+We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
+
+We can provide some amount of technical assistance to those who aren't comfortable programming. We will also provide a starter template and interactive component architecture using Idyll to make it easy to get started. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
+
+* A one-two paragraph outline describing your article
+* Suggested headline
+* Any sketches, mockups, or code prototypes that you've made (optional)
+* A brief description of your background: Why are you qualified to write this? What will you need help with?
+
 
 [/Conditional]
 
 [Conditional if:`levelOfDetail === 0.5`]
 
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+
+## About The Parametric Press
 The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.
 
-While it has never been easier for independent writers to share their ideas online, the current generation of publishing technology mimics tools that were designed during the era of the printing press. The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting data-driven journalism, and pushing the boundaries of web design.
+We are accepting submissions for the issue now; read our call for proposals below.
 
+## Call for Proposals
+We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
 
-We are now accepting submissions for issue one, Science + Society. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
+We can provide some amount of technical assistance to those who aren't comfortable programming. We will also provide a starter template and interactive component architecture using Idyll to make it easy to get started. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
 
-* 1-2 paragraphs outlining your article
+* A one-two paragraph outline describing your article
 * Suggested headline
-* Sketches, mockups, or code prototypes of any multimedia or interactive components
-* A brief description of your background: Why are you qualified to write this? How technically proficient are you? What will you need help with?
-* Anything else we should know
+* Any sketches, mockups, or code prototypes that you've made (optional)
+* A brief description of your background: Why are you qualified to write this? What will you need help with?
 
-### Example Topics
-
-- CRISPR
-- The new science of Causality
-- The Universal Approximation Theorem
-- How is fake meat made
-- Reconstructing images in human brains
-- How to hack an election
-- Quantum Computers
-- Carbon capture technologies
-- Memory manipulation
-- Interfacing with dreams
-- Terraforming Planets
-- Nuclear Technology
-- The decentralized web
-- New developments in architecture
-- Bio Hacking
-- The Opioid Epidemic
-
-
-### Existing Examples / Inspiration
-- [http://worrydream.com/MagicInk/](http://worrydream.com/MagicInk/)
-- [https://explorabl.es/](https://explorabl.es/)
-- [https://www.nytimes.com/section/upshot](https://www.nytimes.com/section/upshot)
-- [https://projects.fivethirtyeight.com/](https://projects.fivethirtyeight.com/)
-- [https://pudding.cool/](https://pudding.cool/)
 
 [/Conditional]
 
-[Conditional if:`levelOfDetail < 0.5`]
-
+[Conditional if:`levelOfDetail === 0.25`]
 The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.
 
-We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific concepts have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
+We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Due to the nature of our publication, we do not expect you to submit a fully developed article. Instead, we will accept idea submissions, and work with those accepted to develop a polished article.
 
-Please send the following information to cfp@parametric.press:
+We can provide some amount of technical assistance to those who aren't comfortable programming. We will also provide a starter template and interactive component architecture using Idyll to make it easy to get started. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
 
-* 1-2 paragraphs outlining your article
+* A one-two paragraph outline describing your article
 * Suggested headline
-* Sketches, mockups, or code prototypes of any multimedia or interactive components
-* A brief description of your background: Why are you qualified to write this? How technically proficient are you? What will you need help with?
-* Anything else we should know
+* Any sketches, mockups, or code prototypes that you've made (optional)
+* A brief description of your background: Why are you qualified to write this? What will you need help with?
+
+
+
+[/Conditional]
+
+[Conditional if:`levelOfDetail === 0`]
+The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.
+
+We are now accepting submissions for issue one, Science + Society. This issue will focus on explaining the impact that technical and scientific topics have, or will have in the near future, on modern society. Accepted submissions will be compensated between $500-1,000 depending on the total number of submissions accepted and the amount of technical assistance required. We will accept submissions until TK and notify candidates of their acceptance by TK. Please send the following information to cfp@parametric.press:
+
+* A one-two paragraph outline describing your article
+* Suggested headline
+* Any sketches, mockups, or code prototypes that you've made (optional)
+* A brief description of your background: Why are you qualified to write this? What will you need help with?
+
+[/Conditional]
 
 ### Example Topics
 
+
+[div className:"stackedList"]
+
 - CRISPR
-- The new science of Causality
-- The Universal Approximation Theorem
-- How is fake meat made
-- Reconstructing images in human brains
-- How to hack an election
+- The science of causality
+- Universal approximation theorem
+- Lab-grown meat
+- Computational neuroscience
+- Election hacking
 - Quantum Computers
 - Carbon capture technologies
+
 - Memory manipulation
 - Interfacing with dreams
-- Terraforming Planets
-- Nuclear Technology
+- Terraforming planets
+- Nuclear technology
 - The decentralized web
 - New developments in architecture
-- Bio Hacking
-- The Opioid Epidemic
+- Biohacking
+- The opioid epidemic
 
+[/div]
 
 ### Existing Examples / Inspiration
-- [http://worrydream.com/MagicInk/](http://worrydream.com/MagicInk/)
-- [https://explorabl.es/](https://explorabl.es/)
-- [https://www.nytimes.com/section/upshot](https://www.nytimes.com/section/upshot)
-- [https://projects.fivethirtyeight.com/](https://projects.fivethirtyeight.com/)
-- [https://pudding.cool/](https://pudding.cool/)
 
-[/Conditional]
+[div className:"stackedList"]
+
+- [Magic Ink](http://worrydream.com/MagicInk/)
+- [Explorable Explanations](https://explorabl.es/)
+- [Nicky Case](http://ncas.me)
+- [New York Times The Upshot](https://www.nytimes.com/section/upshot)
+
+- [FiveThirtyEight](https://projects.fivethirtyeight.com/)
+- [The Pudding](https://pudding.cool/)
+- [Distill](https://distill.pub/)
+- [Idyll](https://idyll-lang.org/gallery)
+
+[/div]

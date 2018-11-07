@@ -1,4 +1,82 @@
 
+@font-face {
+  font-family: 'bluu';
+  src: url('fonts/bluu/bluunext-bold-webfont.woff2') format('woff2'),
+       url('fonts/bluu/bluunext-bold-webfont.woff') format('woff'),
+       url('fonts/bluu/bluunext-bold.ttf') format('truetype'),
+       url('fonts/bluu/bluunext-bold-webfont.svg#bluu_nextbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bluu';
+  src: url('fonts/bluu/bluunext-bolditalic-webfont.woff2') format('woff2'),
+       url('fonts/bluu/bluunext-bolditalic-webfont.woff') format('woff'),
+       url('fonts/bluu/bluunext-bolditalic.ttf') format('truetype'),
+       url('fonts/bluu/bluunext-bolditalic-webfont.svg#bluu_nextbold_italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family:"NoeText-Black";
+  src:url("fonts/noe/NoeText-Black.woff2") format("woff2"),url("fonts/noe/NoeText-Black.woff") format("woff"),url("fonts/noe/NoeText-Black.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+  font-family:"NoeText-Bold";
+  src:url("fonts/noe/NoeText-Bold.woff2") format("woff2"),url("fonts/noe/NoeText-Bold.woff") format("woff"),url("fonts/noe/NoeText-Bold.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+  font-family:"NoeText-BlackItalic";
+  src:url("fonts/noe/NoeText-BlackItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BlackItalic.woff") format("woff"),url("fonts/noe/NoeText-BlackItalic.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"NoeText-BoldItalic";
+  src:url("fonts/noe/NoeText-BoldItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BoldItalic.woff") format("woff"),url("fonts/noe/NoeText-BoldItalic.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"NoeText-Book";
+  src:url("fonts/noe/NoeText-Book.woff2") format("woff2"),url("fonts/noe/NoeText-Book.woff") format("woff"),url("fonts/noe/NoeText-Book.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"NoeText-BookItalic";
+  src:url("fonts/noe/NoeText-BookItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BookItalic.woff") format("woff"),url("fonts/noe/NoeText-BookItalic.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"NoeText";
+  src:url("fonts/noe/NoeText.woff2") format("woff2"),url("fonts/noe/NoeText.woff") format("woff"),url("fonts/noe/NoeText.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"Graphik-Bold";
+  src:url("fonts/graphik/Graphik-Bold.woff2") format("woff2"),url("fonts/graphik/Graphik-Bold.woff") format("woff"),url("fonts/graphik/Graphik-Bold.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"Graphik-BoldItalic";
+  src:url("fonts/graphik/Graphik-BoldItalic.woff2") format("woff2"),url("fonts/graphik/Graphik-BoldItalic.woff") format("woff"),url("fonts/graphik/Graphik-BoldItalic.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+
 body {
   /* Before the wildfire: */
   font-family: NoeText;
@@ -9,9 +87,15 @@ body {
 
 .hed {
   /* Parametric: */
-  font-family: BluuNext-Bold;
+  font-family: bluu;
   font-size: 124px;
   width: 900px;
+}
+
+.hed .press {
+  /* Press: */
+  font-family: bluu;
+  font-style: italic;
 }
 
 .dek {
@@ -20,7 +104,14 @@ body {
   font-size: 20px;
 }
 
-h2 {
+.dek .date {
+  /* Fall/Winter 2018: */
+  font-family: BluuNext-BoldItalic;
+  font-size: 22px;
+  color: #222222;
+}
+
+h2, h3 {
   font-size: 20px;
   font-family: Graphik-Bold;
   text-decoration: none;
@@ -63,7 +154,7 @@ input[type="range"]::-webkit-slider-thumb:after{
 }
 
 .idyll-text-container {
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .sliderContainer {
@@ -76,6 +167,13 @@ input[type="range"]::-webkit-slider-thumb:after{
   text-transform: uppercase;
   padding: 10px;
   text-align: center;
+  background: #fff;
+  opacity: 0.15;
+  transition: opacity 0.5s;
+}
+
+.sliderContainer:hover {
+  opacity: 1;
 }
 .sliderContainer p {
   margin: 0;
@@ -84,7 +182,35 @@ input[type="range"]::-webkit-slider-thumb:after{
   line-height: 18px;
 }
 
+.stackedList {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.stackedList ul {
+  flex-grow: 1;
+  width: 50%;
+}
+
 @media all and (max-width: 1000px) {
 
 }
 
+
+ul {
+  padding-left: 0;
+}
+li{
+  list-style: none;
+  padding-left: 1em;
+}
+li:before{
+  content: '';
+  display: inline-block;
+  height: 11px;
+  width: 40px;
+  background-image: url('images/arrow2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

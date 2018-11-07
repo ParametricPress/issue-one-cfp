@@ -12,8 +12,8 @@ class CustomD3Component extends D3Component {
     this.$controls = d3.selectAll('.sliderContainer');
     this.background = d3.scaleLinear().domain([0, 1]).range(['#222', '#fff']);
     this.color = d3.scaleLinear().domain([1, 0]).range(['#222', '#fff']);
-    this.fontSize = d3.scaleSqrt().domain([0, 1]).range([12, 30]);
-    this.maxWidth = d3.scaleSqrt().domain([0, 0.25, 1]).range([600, 900, window.innerWidth - 100]);
+    this.fontSize = d3.scaleSqrt().domain([0, 1]).range([14, 30]);
+    this.maxWidth = d3.scaleSqrt().domain([0, 0.25, 1]).range([600, 800, window.innerWidth - 150]);
   }
 
   update(props, oldProps) {
