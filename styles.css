@@ -193,9 +193,6 @@ input[type="range"]::-webkit-slider-thumb:after{
   width: 50%;
 }
 
-@media all and (max-width: 1000px) {
-
-}
 
 
 ul {
@@ -213,4 +210,42 @@ li:before{
   background-image: url('images/arrow2x.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media all and (max-width: 1000px) {
+
+
+  body {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .idyll-root {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .hed {
+    font-size: 62px;
+    width: 90vw;
+  }
+
+  .dek {
+    /* Call for Proposals: */
+    font-family: Graphik-Bold;
+    font-size: 20px;
+  }
+
+  .stackedList {
+    display: flex;
+    flex-direction: column;
+  }
+  .stackedList ul {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+
+  .sliderContainer {
+    display: none;
+  }
 }
