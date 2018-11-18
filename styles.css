@@ -1,6 +1,6 @@
 
 @font-face {
-  font-family: 'bluu';
+  font-family: 'Bluu';
   src: url('fonts/bluu/bluunext-bold-webfont.woff2') format('woff2'),
        url('fonts/bluu/bluunext-bold-webfont.woff') format('woff'),
        url('fonts/bluu/bluunext-bold.ttf') format('truetype'),
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'bluu';
+  font-family: 'Bluu';
   src: url('fonts/bluu/bluunext-bolditalic-webfont.woff2') format('woff2'),
        url('fonts/bluu/bluunext-bolditalic-webfont.woff') format('woff'),
        url('fonts/bluu/bluunext-bolditalic.ttf') format('truetype'),
@@ -20,69 +20,39 @@
   font-style: italic;
 }
 
-
 @font-face {
-  font-family:"NoeText-Black";
-  src:url("fonts/noe/NoeText-Black.woff2") format("woff2"),url("fonts/noe/NoeText-Black.woff") format("woff"),url("fonts/noe/NoeText-Black.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-
-@font-face {
-  font-family:"NoeText-Bold";
-  src:url("fonts/noe/NoeText-Bold.woff2") format("woff2"),url("fonts/noe/NoeText-Bold.woff") format("woff"),url("fonts/noe/NoeText-Bold.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-
-@font-face {
-  font-family:"NoeText-BlackItalic";
-  src:url("fonts/noe/NoeText-BlackItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BlackItalic.woff") format("woff"),url("fonts/noe/NoeText-BlackItalic.otf") format("opentype");
-  font-style:normal;font-weight:400;
+  font-family: 'Reforma';
+  src: url('fonts/reforma/Reforma1918-Gris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:"NoeText-BoldItalic";
-  src:url("fonts/noe/NoeText-BoldItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BoldItalic.woff") format("woff"),url("fonts/noe/NoeText-BoldItalic.otf") format("opentype");
-  font-style:normal;font-weight:400;
+  font-family: 'Reforma';
+  src: url('fonts/reforma/Reforma1918-GrisItalica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family:"NoeText-Book";
-  src:url("fonts/noe/NoeText-Book.woff2") format("woff2"),url("fonts/noe/NoeText-Book.woff") format("woff"),url("fonts/noe/NoeText-Book.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-@font-face {
-  font-family:"NoeText-BookItalic";
-  src:url("fonts/noe/NoeText-BookItalic.woff2") format("woff2"),url("fonts/noe/NoeText-BookItalic.woff") format("woff"),url("fonts/noe/NoeText-BookItalic.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-@font-face {
-  font-family:"NoeText";
-  src:url("fonts/noe/NoeText.woff2") format("woff2"),url("fonts/noe/NoeText.woff") format("woff"),url("fonts/noe/NoeText.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-@font-face {
-  font-family:"Graphik-Bold";
-  src:url("fonts/graphik/Graphik-Bold.woff2") format("woff2"),url("fonts/graphik/Graphik-Bold.woff") format("woff"),url("fonts/graphik/Graphik-Bold.otf") format("opentype");
-  font-style:normal;font-weight:400;
-}
-
-@font-face {
-  font-family:"Graphik-BoldItalic";
-  src:url("fonts/graphik/Graphik-BoldItalic.woff2") format("woff2"),url("fonts/graphik/Graphik-BoldItalic.woff") format("woff"),url("fonts/graphik/Graphik-BoldItalic.otf") format("opentype");
-  font-style:normal;font-weight:400;
+  font-family:"Anderson";
+  src:url("fonts/anderson/AndersonGrotesk-Black.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
 }
 
 body {
   /* Before the wildfire: */
-  font-family: NoeText;
+  font-family: Reforma;
   font-size: 20px;
   color: #222222;
   line-height: 40px;
+  font-weight: 500;
+}
+
+.article-header {
+  width: 100%;
+  max-width: 100%;
 }
 
 .hed {
@@ -90,6 +60,7 @@ body {
   font-family: bluu;
   font-size: 124px;
   width: 900px;
+  line-height: 111px;
 }
 
 .hed .press {
@@ -100,7 +71,7 @@ body {
 
 .dek {
   /* Call for Proposals: */
-  font-family: Graphik-Bold;
+  font-family: Anderson;
   font-size: 20px;
 }
 
@@ -113,9 +84,21 @@ body {
 
 h2, h3 {
   font-size: 20px;
-  font-family: Graphik-Bold;
+  font-family: Anderson;
   text-decoration: none;
   border-bottom: none;
+}
+
+h1.hed, h2.dek {
+  margin: 0;
+}
+
+h2.dek {
+  margin-top: 48px;
+}
+
+h2 {
+  margin: 50px 0 16px;
 }
 
 input[type="range"]{
@@ -154,7 +137,7 @@ input[type="range"]::-webkit-slider-thumb:after{
 }
 
 .idyll-text-container {
-  max-width: 800px;
+  max-width: 896px;
 }
 
 .sliderContainer {
@@ -214,3 +197,6 @@ li:before{
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+
