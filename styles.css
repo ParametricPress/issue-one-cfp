@@ -66,6 +66,11 @@
 }
 
 @font-face {
+  font-family:"Graphik";
+  src:url("fonts/graphik/Graphik.woff2") format("woff2"),url("fonts/graphik/Graphik.woff") format("woff"),url("fonts/graphik/Graphik.otf") format("opentype");
+  font-style:normal;font-weight:400;
+}
+@font-face {
   font-family:"Graphik-Bold";
   src:url("fonts/graphik/Graphik-Bold.woff2") format("woff2"),url("fonts/graphik/Graphik-Bold.woff") format("woff"),url("fonts/graphik/Graphik-Bold.otf") format("opentype");
   font-style:normal;font-weight:400;
@@ -117,7 +122,7 @@ h2, h3 {
   text-decoration: none;
   border-bottom: none;
 }
-
+/*
 input[type="range"]{
   -webkit-appearance:none;
   width:160px;
@@ -151,30 +156,59 @@ input[type="range"]::-webkit-slider-thumb:after{
   top:5px;
   background: #000;
   background: linear-gradient(to right, #000 1%, #000 70%);
-}
+} */
 
 .idyll-text-container {
   max-width: 800px;
 }
 
 .sliderContainer {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  right: 20px;
-  bottom: 20px;
-  border: solid 1px black;
+  right: 50px;
+  top: 50px;
+  /* border: solid 1px black; */
   text-transform: uppercase;
   padding: 10px;
   text-align: center;
-  background: #fff;
-  opacity: 0.15;
-  transition: opacity 0.5s;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+  font-family: Graphik;
+  /* opacity: 0.15; */
+  /* transition: opacity 0.5s; */
 }
 
-.sliderContainer:hover {
-  opacity: 1;
+.sliderContainer img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 155px;
+  background: none;
 }
+
+
+.sliderContainer .button {
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* background: #222222; */
+  border-bottom: solid 2px #222222;
+  /* color: #ffffff; */
+  margin: 0 auto;
+}
+
+.sliderContainer input {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* .sliderContainer:hover {
+  opacity: 1;
+} */
 .sliderContainer p {
   margin: 0;
   margin-left: 10px;
@@ -193,6 +227,9 @@ input[type="range"]::-webkit-slider-thumb:after{
   width: 50%;
 }
 
+.controls {
+  cursor: pointer;
+}
 
 
 ul {
@@ -210,6 +247,11 @@ li:before{
   background-image: url('images/arrow2x.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+a {
+  text-decoration: underline;
+  color: #222222;
 }
 @media all and (max-width: 1000px) {
 
