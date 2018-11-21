@@ -1,5 +1,7 @@
 # issue-one-cfp
 
+[consider all numbers/dates to be placeholders]. 
+
 ## How to develop
 
 1. Make sure `idyll` is installed globally: `npm install -g idyll`
