@@ -24,10 +24,15 @@ class CustomD3Component extends D3Component {
       .style('font-size', this.fontSize(fontSize) + 'px')
       .style('line-height', 2 * this.fontSize(fontSize) + 'px');
 
+
+
     this.$controls
       .style('background', this.background(brightness));
 
     this.$containers.style('max-width', this.maxWidth(fontSize) + 'px');
+
+    // this.$containers.selectAll('li')
+    //   .style('filter', `invert(${1 - brightness})`);
   }
 }
 

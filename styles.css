@@ -222,11 +222,13 @@ li:before{
   .idyll-root {
     padding-left: 0;
     margin-left: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hed {
-    font-size: 62px;
-    width: 90vw;
+    font-size: 48px;
+    width: 100%;
   }
 
   .dek {
