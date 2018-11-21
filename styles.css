@@ -111,7 +111,8 @@ body {
 
 .dek .date {
   /* Fall/Winter 2018: */
-  font-family: BluuNext-BoldItalic;
+  font-family: bluu;
+  font-style: italic;
   font-size: 22px;
   color: #222222;
 }
@@ -166,8 +167,8 @@ input[type="range"]::-webkit-slider-thumb:after{
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 50px;
-  top: 50px;
+  right: 20px;
+  top: 20px;
   /* border: solid 1px black; */
   text-transform: uppercase;
   padding: 10px;

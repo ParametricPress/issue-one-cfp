@@ -1,4 +1,8 @@
-[meta title:"The Parametric Press | Issue 01 Call For Proposals" description:"The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society." /]
+[meta
+    title:"The Parametric Press | Issue 01 Call For Proposals"
+    twitterTitle:"Introducing the Parametric Press, an experimental digital magazine dedicated to exploring the interactive storytelling capabilities of the web. Issue 01, Call For Proposals @ParametricPress"
+    twitterHandle:"ParametricPress"
+    description:"The Parametric Press is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society." /]
 
 
 [Header /]
@@ -22,14 +26,15 @@
 
     [img src:"static/images/detail-label.png" /][br/]
     [Range value:levelOfDetail min:0 max:`levelsOfDetail.length - 1` step:1  /]
-    [Display value:levelOfDetailLabel /][br/]
+    [br/]
+    [Display value:levelOfDetailLabel /]
 [/div]
 
 [Conditional if:`levelOfDetailLabel === 'Everything'`]
 
-While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around empowering individuals and enhancing cognition, but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook,
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook,
 
-Alan Kay imagined the DynaBook in the hands of children across the world, while Neal Stephenson wrote of interactive paper that could display videos and interfaces, and books that could teach their readers. The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
+Alan Kay [imagined the DynaBook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
 
 ## About The Parametric Press
 The **Parametric Press** is an experimental new project, a born-digital magazine dedicated to showcasing the expository power that's possible when the audio, visual, and interactive capabilities of dynamic media are more fully utilized. In the coming year, we will publish our first issue, Science + Society.

@@ -1,4 +1,5 @@
 const React = require('react');
+const Social = require('./social');
 
 class CustomComponent extends React.PureComponent {
 
@@ -14,6 +15,7 @@ class CustomComponent extends React.PureComponent {
     return (
       <div className="sliderContainer">
       {/* <img  className="controls" src="static/images/control.png" /> */}
+      <Social />
       <div onClick={() => this.setState({opened: !opened})} className="button">Controls</div>
         <div style={{opacity: opened ? 1 : 0, pointerEvents: opened ? 'all' : 'none'}} >
           {this.props.children}
