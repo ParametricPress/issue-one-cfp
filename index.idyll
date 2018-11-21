@@ -28,7 +28,7 @@
     [Range value:levelOfDetail min:0 max:`levelsOfDetail.length - 1` step:1  /]
     [br/]
     [Display value:levelOfDetailLabel /]
-[/div]
+[/SliderContainer]
 
 [Conditional if:`levelOfDetailLabel === 'Everything'`]
 
