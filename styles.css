@@ -77,7 +77,8 @@ body {
 
 .dek .date {
   /* Fall/Winter 2018: */
-  font-family: BluuNext-BoldItalic;
+  font-family: bluu;
+  font-style: italic;
   font-size: 22px;
   color: #222222;
 }
@@ -101,6 +102,7 @@ h2 {
   margin: 50px 0 16px;
 }
 
+/*
 input[type="range"]{
   -webkit-appearance:none;
   width:160px;
@@ -134,30 +136,59 @@ input[type="range"]::-webkit-slider-thumb:after{
   top:5px;
   background: #000;
   background: linear-gradient(to right, #000 1%, #000 70%);
-}
+} */
 
 .idyll-text-container {
   max-width: 896px;
 }
 
 .sliderContainer {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   right: 20px;
-  bottom: 20px;
-  border: solid 1px black;
+  top: 20px;
+  /* border: solid 1px black; */
   text-transform: uppercase;
   padding: 10px;
   text-align: center;
-  background: #fff;
-  opacity: 0.15;
-  transition: opacity 0.5s;
+  font-size: 12px;
+  line-height: 14px;
+  color: black;
+  font-family: Graphik;
+  /* opacity: 0.15; */
+  /* transition: opacity 0.5s; */
 }
 
-.sliderContainer:hover {
-  opacity: 1;
+.sliderContainer img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 155px;
+  background: none;
 }
+
+
+.sliderContainer .button {
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* background: #222222; */
+  border-bottom: solid 2px #222222;
+  /* color: #ffffff; */
+  margin: 0 auto;
+}
+
+.sliderContainer input {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* .sliderContainer:hover {
+  opacity: 1;
+} */
 .sliderContainer p {
   margin: 0;
   margin-left: 10px;
@@ -176,8 +207,8 @@ input[type="range"]::-webkit-slider-thumb:after{
   width: 50%;
 }
 
-@media all and (max-width: 1000px) {
-
+.controls {
+  cursor: pointer;
 }
 
 
@@ -198,5 +229,47 @@ li:before{
   background-size: contain;
 }
 
+a {
+  text-decoration: underline;
+  color: #222222;
+}
+@media all and (max-width: 1000px) {
 
 
+  body {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .idyll-root {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hed {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .dek {
+    /* Call for Proposals: */
+    font-family: Graphik-Bold;
+    font-size: 20px;
+  }
+
+  .stackedList {
+    display: flex;
+    flex-direction: column;
+  }
+  .stackedList ul {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+
+  .sliderContainer {
+    display: none;
+  }
+}

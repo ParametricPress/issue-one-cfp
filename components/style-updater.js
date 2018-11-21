@@ -9,9 +9,9 @@ class CustomD3Component extends D3Component {
   initialize(node, props) {
     this.$body = d3.select('body');
     this.$containers = d3.selectAll('.idyll-text-container');
-    this.$controls = d3.selectAll('.sliderContainer');
-    this.background = d3.scaleLinear().domain([0, 1]).range(['#222', '#fff']);
-    this.color = d3.scaleLinear().domain([1, 0]).range(['#222', '#fff']);
+    this.$controls = d3.selectAll('.sliderContainer .button');
+    this.background = d3.scaleLinear().domain([0, 1]).range(['#444', '#fff']);
+    this.color = d3.scaleLinear().domain([1, 0]).range(['#222', '#ccc']);
     this.fontSize = d3.scaleSqrt().domain([0, 1]).range([14, 30]);
     this.maxWidth = d3.scaleSqrt().domain([0, 0.25, 1]).range([600, 800, window.innerWidth - 150]);
   }
@@ -24,10 +24,18 @@ class CustomD3Component extends D3Component {
       .style('font-size', this.fontSize(fontSize) + 'px')
       .style('line-height', 2 * this.fontSize(fontSize) + 'px');
 
-    this.$controls
-      .style('background', this.background(brightness));
+    this.$body
+      .selectAll('a')
+      .style('color', this.color(brightness))
+
+    // this.$controls
+      // .style('border-bottom-color', this.color(brightness))
+      // .style('color', this.color(brightness));
 
     this.$containers.style('max-width', this.maxWidth(fontSize) + 'px');
+
+    // this.$containers.selectAll('li')
+    //   .style('filter', `invert(${1 - brightness})`);
   }
 }
 
