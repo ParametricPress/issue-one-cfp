@@ -15,9 +15,16 @@
 [derived name:"levelsOfDetail" value:`['TL;DR', 'Quick', 'Highlights', 'Everything']` /]
 [derived name:"levelOfDetailLabel" value:`levelsOfDetail[levelOfDetail]` /]
 
+[derived name:"showReset" value:`brightness !== 1 || fontSize !== 0.25 || levelOfDetail !== 3 ` /]
+
 [SliderContainer]
     [StyleUpdater brightness:brightness fontSize:fontSize /]
 
+    [Conditional if:showReset]
+        [button className:"reset" onClick:`brightness = 1; fontSize = 0.25; levelOfDetail = 3`]
+            Reset
+        [/button]
+    [/Conditional]
     [img src:"static/images/size-label.png" /][br/]
     [Range value:fontSize min:0 max:1 step:0.01 /]
 
@@ -28,6 +35,7 @@
     [Range value:levelOfDetail min:0 max:`levelsOfDetail.length - 1` step:1  /]
     [br/]
     [Display value:levelOfDetailLabel /]
+
 [/SliderContainer]
 
 [Conditional if:`levelOfDetailLabel === 'Everything'`]
