@@ -81,7 +81,6 @@ body {
   font-family: bluu;
   font-style: italic;
   font-size: 22px;
-  color: #222222;
 }
 
 h2, h3 {
@@ -155,6 +154,7 @@ input[type="range"]::-webkit-slider-thumb:after{
   text-align: center;
   font-size: 12px;
   line-height: 14px;
+  color: black;
   font-family: Graphik;
   /* opacity: 0.15; */
   /* transition: opacity 0.5s; */

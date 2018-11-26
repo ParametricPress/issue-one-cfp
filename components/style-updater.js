@@ -32,15 +32,15 @@ class CustomD3Component extends D3Component {
       .selectAll('a')
       .style('color', this.color(brightness))
 
-    this.$controls
+    // this.$controls
 
-      .style('color', this.color(brightness));
+    //   .style('color', this.color(brightness));
 
     this.$controls.selectAll('button')
       // .style('border-bottom-color', this.color(brightness))
       .style('color', this.color(brightness));
 
-    this.$controls.selectAll('.button').style('border-bottom-color', this.color(brightness))
+    // this.$controls.selectAll('.button').style('border-bottom-color', this.color(brightness))
 
     this.$containers.style('max-width', this.maxWidth(fontSize) + 'px');
 

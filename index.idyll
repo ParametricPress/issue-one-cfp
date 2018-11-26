@@ -40,7 +40,7 @@
 
 [Conditional if:`levelOfDetailLabel === 'Everything'`]
 
-While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the   of publishing through platforms like WordPress and Facebook,
+While it has never been easier for independent writers to share their ideas online,  the current generation of publishing technology mimics tools that were designed during the era of the printing press. Past aspirational visions for the future of computing centered around [empowering individuals](http://www.newmediareader.com/book_samples/nmr-21-nelson.pdf) and [enhancing cognition](http://dougengelbart.org/content/view/138/000/), but many of these ideas fell to the wayside during the wildfire spread of internet connectivity and the commodification of publishing through platforms like WordPress and Facebook.
 
 Alan Kay [imagined the DynaBook](https://history-computer.com/ModernComputer/Personal/Dynabook.html) in the hands of children across the world, while Neal Stephenson wrote of [interactive paper that could display videos and interfaces, and books that could teach their readers](https://en.wikipedia.org/wiki/The_Diamond_Age). The web offers rich dynamic capabilities, but to most authors these are off limits, residing outside the confines of restrictive content management systems. We are a group of designers, programmers, and researchers who want to change that. Together, we are building interactive publishing tools, supporting digital journalism, and pushing the boundaries of web design.
 
@@ -68,7 +68,7 @@ We can provide some amount of technical assistance to those who aren't comfortab
 - Lab-grown meat
 - Computational neuroscience
 - Election hacking
-- Quantum Computers
+- Quantum computers
 - Memory manipulation
 
 - Carbon capture technologies
@@ -76,7 +76,7 @@ We can provide some amount of technical assistance to those who aren't comfortab
 - Terraforming planets
 - Nuclear technology
 - The decentralized web
-- New developments in architecture
+- Advances in architecture
 - Biohacking
 - The opioid epidemic
 
