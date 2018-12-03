@@ -11,13 +11,13 @@ class CustomComponent extends React.PureComponent {
 
   handleFacebookClick() {
     const text = document.querySelector('meta[property="og:title"]').getAttribute('content');
-    window.open(`http://www.facebook.com/sharer/sharer.php?u=${escape(window.location.href)}&title=${escape(text)}`, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    window.open(`http://www.facebook.com/sharer/sharer.php?u=${escape(window.location.origin + window.location.pathname)}&title=${escape(text)}`, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
     return false;
   }
 
   handleTwitterClick() {
       const text = document.querySelector('meta[property="twitter:title"]').getAttribute('content');
-      window.open(`https://twitter.com/share?url=${escape(window.location.href)}&text=${escape(text)}`, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+      window.open(`https://twitter.com/share?url=${escape(window.location.origin + window.location.pathname)}&text=${escape(text)}`, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
       return false;
   }
 

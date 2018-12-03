@@ -51,6 +51,21 @@ body {
   transition: opacity 0.5s;
 }
 
+.videoContainer {
+  display: block;
+  margin: 1em auto;
+  height: 335px;
+  width: 100%;
+}
+.videoContainer span, iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
 .article-header {
   width: 100%;
   max-width: 100%;
@@ -200,6 +215,8 @@ input[type="range"]::-webkit-slider-thumb:after{
   display: flex;
   flex-direction: row;
   align-content: space-around;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .stackedList ul {
